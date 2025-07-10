@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Time Entry</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <h3>Task Time Entry</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+    <tfoot>
+      <tr>
+        <td>
+          <select id="taskSelect">
+            <option value="">Drop Down</option>
+            <option value="UI Design">UI Design</option>
+            <option value="Development">Development</option>
+            <option value="Testing">Testing</option>
+          </select>
+        </td>
+        <td><input type="text" id="Monday" placeholder="HH:MM"></td>
+        <td><input type="text" id="Tuesday" placeholder="HH:MM"></td>
+        <td><input type="text" id="Wednesday" placeholder="HH:MM"></td>
+        <td><input type="text" id="Thursday" placeholder="HH:MM"></td>
+        <td><input type="text" id="Friday" placeholder="HH:MM"></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div>
+    <button onclick="addRow()">Add</button>
+    <button onclick="clearInputs()">Cancel</button>
+    <button onclick="SubmitData()">Submit</button>
+  </div>
+
+  <script src="/main.js"></script>
+
+
+</body>
+
+</html>
