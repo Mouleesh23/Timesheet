@@ -32,9 +32,9 @@ const data = [];
     }
 
     function addRow() {
-    //   const task = taskSelect.value;
+      const task = taskSelect.value;
       const row = {
-        // task,
+        task,
         Monday: inputs.Monday.value.trim(),
         Tuesday: inputs.Tuesday.value.trim(),
         Wednesday: inputs.Wednesday.value.trim(),
@@ -45,7 +45,7 @@ const data = [];
       const atLeastOneTime = Object.values(row).some(val => val !== '');
       console.log("...........",atLeastOneTime);
 
-      const task = taskSelect.value;
+      
       
       if (!task || !atLeastOneTime) {
         alert("Please select a task and enter at least one time.");
